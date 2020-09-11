@@ -190,6 +190,7 @@ public class QTabView extends TabView {
         return this;
     }
 
+
     /**
      * @param resId The Drawable res to use as the background, if less than 0 will to remove the
      *              background
