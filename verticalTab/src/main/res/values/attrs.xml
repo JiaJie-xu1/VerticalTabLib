@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerticalTabLayout"><attr format="color" name="indicator_color"/><attr format="dimension" name="indicator_width1"/><attr format="dimension" name="indicator_corners"/><attr format="enum" name="indicator_gravity">
+        <enum name="bottom" value="80"/>
+        <enum name="left" value="3"/>
+        <enum name="right" value="5"/>
+        <enum name="fill" value="119"/>
+    </attr><attr format="dimension" name="tab_margin"/><attr format="enum" name="tab_mode">
+        <enum name="fixed" value="10"/>
+        <enum name="scrollable" value="11"/>
+    </attr><attr format="dimension" name="tab_height"/></declare-styleable>
+</resources>
