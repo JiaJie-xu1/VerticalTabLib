@@ -37,5 +37,6 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation "com.google.android.material:material:1.2.1"
 
-    implementation project(path: ':verticalTab')
+//    implementation project(path: ':verticalTab')
+    implementation 'com.github.JiaJie-xu1:VerticalTabLib:2.0.1'
 }
