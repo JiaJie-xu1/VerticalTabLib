@@ -30,3 +30,17 @@ dependencies {
 	        implementation 'com.github.JiaJie-xu1:VerticalTabLib:2.0.1'
 	}
 ```
+
+Step 3. xml
+
+```
+<com.partner.tabtools.verticalTab.VerticalTabLayout
+                android:id="@+id/verticalTabLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                app:indicator_color="#64e4f2"
+                app:indicator_gravity="left"
+                app:tab_mode="scrollable"
+                app:tab_height="@dimen/dp55"/>
+```
