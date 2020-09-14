@@ -5,3 +5,28 @@ UI需求，仿京东分类侧边栏，在github上找到一个开源项目[Verti
 ### 效果图
 ![image](https://github.com/JiaJie-xu1/VerticalTabLib/blob/master/demo1.gif)
 ![image](https://github.com/JiaJie-xu1/VerticalTabLib/blob/master/demo2.gif)
+
+
+#### How To Use
+
+Step 1. Add the JitPack repository to your build file
+
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+```
+
+Step 2. Add the dependency
+
+
+```
+dependencies {
+	        implementation 'com.github.JiaJie-xu1:VerticalTabLib:2.0.1'
+	}
+```
