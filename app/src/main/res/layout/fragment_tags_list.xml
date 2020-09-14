@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:textColor="#343434"
             android:textStyle="bold"
-            android:text="侧边栏左" />
+            android:text="侧边栏" />
     </RelativeLayout>
 
     <LinearLayout
@@ -41,11 +41,25 @@
                 android:layout_height="wrap_content"
                 android:background="#f7f7f7"
                 app:indicator_color="#64e4f2"
-                app:indicator_gravity="left"
+                app:indicator_gravity="bottom"
                 app:tab_mode="scrollable"
                 app:tab_height="@dimen/dp55"/>
         </RelativeLayout>
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fafafa">
+            <com.partner.tabtools.verticalTab.VerticalTabLayout
+                android:id="@+id/verticalTabLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f7f7f7"
+                app:indicator_color="#64e4f2"
+                app:indicator_gravity="fill"
+                app:tab_mode="scrollable"
+                app:tab_height="@dimen/dp55"/>
+        </RelativeLayout>
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/vpAllTags"
             android:background="@color/white"

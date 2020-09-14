@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.partner.verticaltabdemo.fragment.HomeFragment
 import com.partner.verticaltabdemo.fragment.TagsFragment
+import com.partner.verticaltabdemo.fragment.TagsListFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.system.exitProcess
@@ -28,9 +30,9 @@ class MainActivity : AppCompatActivity(),BottomNavigationView.OnNavigationItemSe
     private fun initView() {
         bvHomeNavigation.inflateMenu(R.menu.menu_cy_home_bottom_nav)
         bvHomeNavigation.setOnNavigationItemSelectedListener(this)
-        fragments.add(Fragment())
+        fragments.add(HomeFragment())
         fragments.add(TagsFragment())
-        fragments.add(Fragment())
+        fragments.add(TagsListFragment())
 
         adapter = object : FragmentPagerAdapter(supportFragmentManager) {
             override fun getItem(i: Int): Fragment {
