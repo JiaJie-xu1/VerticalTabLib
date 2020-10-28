@@ -44,3 +44,34 @@ Step 3. xml
                 app:tab_mode="scrollable"
                 app:tab_height="@dimen/dp55"/>
 ```
+Step 4. adapter方法创建(kotlin写法)
+
+```
+adapter =object : TabAdapter {
+            override fun getIcon(position: Int): TabView.TabIcon? {
+                return null
+            }
+
+            override fun getBadge(position: Int): TabView.TabBadge? {
+                return null
+            }
+
+            override fun getBackground(position: Int): Int {
+                return resources.getColor(R.color.white)
+            }
+
+            override fun getTitle(position: Int): TabView.TabTitle {
+                return TabView.TabTitle.Builder()
+                    .setContent(tabsTitle[position])
+                    .setTextSize(DisplayUtil.getSR(13))
+                    .setTextColor(0xFFcbcbcc.toInt(), 0xFF4a4a4a.toInt())
+                    .build()
+            }
+
+            override fun getCount(): Int {
+                return tabsTitle.size
+            }
+
+        }
+        verticalTabLayout.setTabAdapter(adapter)
+```
