@@ -75,3 +75,51 @@ adapter =object : TabAdapter {
         }
         verticalTabLayout.setTabAdapter(adapter)
 ```
+java写法
+
+```
+tablayout.setTabAdapter(new TabAdapter() {
+            @Override
+            public int getCount() {
+                return 0;
+            }
+
+            @Override
+            public TabView.TabBadge getBadge(int position) {
+                return null;
+            }
+
+            @Override
+            public TabView.TabIcon getIcon(int position) {
+                return null;
+            }
+
+            @Override
+            public TabView.TabTitle getTitle(int position) {
+                return null;
+            }
+
+            @Override
+            public int getBackground(int position) {
+                return 0;
+            }
+	     });
+```
+
+```
+按照自己的需要进行返回相应的值即可，不需要的返回0或者null
+也可以选择使用SimpleTabAdapter，内部空实现了TabAdapter的所有方法
+TabBadge、TabIcon、TabTitle使用build模式创建。
+```
+
+属性说明
+
+xml | code | 说明
+---|---|---
+app:indicator_color | setIndicatorColor | 指示器颜色
+app:indicator_width | setIndicatorWidth | 指示器宽度
+app:indicator_gravity | setIndicatorGravity | 指示器位置
+app:indicator_corners | setIndicatorCorners | 指示器圆角
+app:tab_mode | setTabMode | Tab高度模式
+app:tab_height | setTabHeight | Tab高度
+app:tab_margin | setTabMargin | Tab间距
