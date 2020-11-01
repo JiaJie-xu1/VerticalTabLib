@@ -110,7 +110,6 @@ tablayout.setTabAdapter(new TabAdapter() {
 
 ```
 按照自己的需要进行返回相应的值即可，不需要的返回0或者null
-也可以选择使用SimpleTabAdapter，内部空实现了TabAdapter的所有方法
 TabBadge、TabIcon、TabTitle使用build模式创建。
 ```
 
