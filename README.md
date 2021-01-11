@@ -29,7 +29,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-	        implementation 'com.github.JiaJie-xu1:VerticalTabLib:2.0.1'
+	        implementation 'com.github.JiaJie-xu1:VerticalTabLib:2.0.2'
 	}
 ```
 
