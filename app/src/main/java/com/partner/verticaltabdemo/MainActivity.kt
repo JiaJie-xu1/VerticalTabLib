@@ -10,6 +10,7 @@ import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.partner.verticaltabdemo.fragment.HomeFragment
 import com.partner.verticaltabdemo.fragment.TagsFragment
+import com.partner.verticaltabdemo.fragment.TagsJavaFragment
 import com.partner.verticaltabdemo.fragment.TagsListFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity(),BottomNavigationView.OnNavigationItemSe
         fragments.add(HomeFragment())
         fragments.add(TagsFragment())
         fragments.add(TagsListFragment())
+        fragments.add(TagsJavaFragment())
 
         adapter = object : FragmentPagerAdapter(supportFragmentManager) {
             override fun getItem(i: Int): Fragment {
@@ -96,6 +98,8 @@ class MainActivity : AppCompatActivity(),BottomNavigationView.OnNavigationItemSe
                 return true
             }
             else -> {
+                vpHomePager.currentItem = 3
+                return true
             }
         }
         return false

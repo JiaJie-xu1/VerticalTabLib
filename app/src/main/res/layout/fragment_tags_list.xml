@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:textColor="#343434"
             android:textStyle="bold"
+            android:textSize="18sp"
             android:text="侧边栏" />
     </RelativeLayout>
 

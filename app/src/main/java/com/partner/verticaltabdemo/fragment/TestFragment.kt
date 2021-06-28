@@ -29,4 +29,5 @@ class TestFragment : Fragment(){
         }
         tvTag.text = type
     }
+
 }
