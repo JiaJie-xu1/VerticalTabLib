@@ -80,10 +80,10 @@ adapter =object : TabAdapter {
 java写法
 
 ```
-tablayout.setTabAdapter(new TabAdapter() {
+adapter = new TabAdapter() {
             @Override
             public int getCount() {
-                return 0;
+                return tabsTitle.size();
             }
 
             @Override
@@ -98,14 +98,19 @@ tablayout.setTabAdapter(new TabAdapter() {
 
             @Override
             public TabView.TabTitle getTitle(int position) {
-                return null;
+                return new TabView.TabTitle.Builder()
+                        .setContent(tabsTitle.get(position))
+                        .setTextSize(DisplayUtil.getSR(13))
+                        .setTextColor(0xFFcbcbcc,0xFF4a4a4a)
+                        .build();
             }
 
             @Override
             public int getBackground(int position) {
-                return 0;
+                return getResources().getColor(R.color.white);
             }
-	     });
+        };
+        verticalTabLayout.setTabAdapter(adapter);
 ```
 
 ```
